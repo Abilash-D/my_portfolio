@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Portfolio Website-Abilash</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css" integrity="sha384-zIaWifL2YFF1qaDiAo0JFgsmasocJ/rqu7LKYH8CoBEXqGbb9eO+Xi3s6fQhgFWM" crossorigin="anonymous">
+  <!-- font awesome -->
+  <script src="https://kit.fontawesome.com/31149d48b0.js" crossorigin="anonymous"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- linking css file -->
+  <link rel="stylesheet" href="styletype.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styleofmap.css">
+  <link rel="stylesheet" href="styleproj.css">
+  <!-- bootstrap CDN -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css" integrity="sha384-zIaWifL2YFF1qaDiAo0JFgsmasocJ/rqu7LKYH8CoBEXqGbb9eO+Xi3s6fQhgFWM" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- font awesome -->
+  <script src="https://kit.fontawesome.com/31149d48b0.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+<div class="d-none d-xl-block">
+  <div class="navigation">
+    <ul>
+        <li class="list active">
+            <a href="#home">
+                <span class="icon">
+                    <ion-icon name="home-outline"></ion-icon>
+                </span>
+                <span class="text"></span>
+            </a>
+        </li>
+        <li class="list ">
+            <a href="#about">
+                <span class="icon">
+                  <ion-icon name="code-working-outline"></ion-icon>
+                </span>
+                <span class="text"></span>
+            </a>
+        </li>
+        <li class="list">
+            <a href="#education">
+                <span class="icon">
+                    <ion-icon name="person-outline"></ion-icon>
+                </span>
+                <span class="text"></span>
+            </a>
+        </li>
+        <li class="list">
+            <a href="#languages">
+                <span class="icon">
+                    <ion-icon name="accessibility-outline"></ion-icon>
+                </span>
+                <span class="text"></span>
+            </a>
+        </li>
+        <li class="list">
+            <a href="#projects">
+                <span class="icon">
+                    <ion-icon name="call-outline"></ion-icon>
+                </span>
+                <span class="text"></span>
+            </a>
+        </li>
+        <div class="indicator"></div>
+    </ul>
+</div></div>
+<script>
+    const list = document.querySelectorAll('.list');
+    function activelink()
+    {
+        list.forEach((item) =>
+        item.classList.remove('active'));
+        this.classList.add('active');
+    }
+    list.forEach((item) =>
+    item.addEventListener('mouseover',activelink));
+</script>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <!-- navbar -->
+  <nav class="navbar navbar-expand-lg fixed-top navbar-dark navbarScroll d-sm-none d-md-block">
+    <div class="container">
+      <a class="navbar-brand" href="#"><h2>ABILASH</h2></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#home"><h4>Home</h4></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about"><h4>About</h4></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#education"><h4>Skills</h4></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact"><h4>Contact</h4></a>
+          </li>
+        </ul>
+
+      </div>
+    </div>
+  </nav>
+  <!-- main banner -->
+  <section class="bgimage" id="home">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-12  col-sm-12 col-xs-12 hero-text">
+          <h2 class="hero_title">Hi, it's me Abilash</h2>
+         <div class="hero_desc d-none d-xl-block"><div class="line-1 anim-typewriter"><p>I am a CSE student in VIT</p></div></div> 
+        
+         
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- about section-->
+  <section id="about">
+    <div class="container mt-4 pt-4">
+      <h1 class="text-center">About Me</h1>
+      <div class="row mt-4">
+        <div class="col-lg-4">
+          <img src="images/about.jpg" class="imageAboutPage " alt="">
+        </div>
+
+        <div class="col-lg-8">
+          <p>I'm pursuing my engineering in computer science with specialization in data science at vellore institute of technology </p>
+          <div class="row mt-3">
+            <div class="col-md-5">
+              <ul>
+                <li><span class="left">Name</span><span class="right">: ABILASH D</span></li>
+                <li><span class="left">Date of Birth</span><span class="right">: 04.01.2003 (20)</span></li>
+                <li><span class="left">Phone</span><span class="right">: +91 7603826640</span></li>
+                
+              </ul>
+            </div>
+            <span class="col-md-7">
+              <ul>
+                <li><span class="left">Nationality</span><span class="right">: Indian </span></li>
+                <li><span class="left">Degree</span><span class="right">: B.Tech - Computer Science Engineering</span></li>
+                <li><span class="left">Mail</span><span class="right">: abilash.d2020a@vitstudent.ac.in</span></li>
+                
+              </ul>
+            </span>
+          </div>
+          <div class="row mt-4">
+            <p> I have done my schooling from Chennai. For my graduation, I chose CSE at VIT University. It's a very enriching experience at the University as not only we were actively involved in practical projects, but also got opportunities to participate in a number of sports and other club activities. I have developed some mini-projects based on app development and web development. I strongly believe on hardwork and
+              perseverence.</p>
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <!-- mymap -->
+  <section id="education">
+
+    <center><hr width="80%" style=" opacity:1;color: greenyellow; margin-top:40px ; height:2px; border-radius:2px" ></center>
+    <div class="container mb-3">
+  <div class="row mt-4 pt-4 pd-4">
+    <div class="text-center">
+      
+    </div>
+    
+  <div class="container col-6">
+    <h1 class="text-center">  Education</h1>
+  <div class="container-map">
+    <div class="timeline">
+      <ul>
+        <li>
+          <div class="timeline-content">
+            <h3 class="date">August 2020-Present</h3>
+            <h1>B.tech in CSE</h1>
+            <div><p>specialization-data science</p></div>
+            <div><p> Vellore Institute Of Technology - Vellore</p></div>
+            <DIV><p id="mark">CGPA:9.2</p></DIV></div>
+        </li>
+        <li>
+          <div class="timeline-content">
+            <h3 class="date">June 2018-March 2020</h3>
+            <h1>Higher secondary schooling</h1>
+            <div><p>Velammal Knowledge Park-Ponneri,Chennai</p></div>
+            <div><p id="mark">Percentage:92%</p></div>
+          </div>
+        </li>
+        <li>
+          <div class="timeline-content">
+            <h3 class="date">June 2016-March 2018</h3>
+            <h1>High school education</h1>
+            <div><p>C.K.T matriculation school- Kovilpatti<p></p></div>
+            <div><p id="mark">Percentage:97%</p></div>
+            </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="container col-6 mt-6 m-6">
+  <h1 class="text-center m-4 pd-4">Skills</h1>
+  <div class="container mt-3 m-6 pt-6 mb-3">
+  <div class="card servicesText pt-6">
+    <div class="card-body">
+      <i class="fas servicesIcon "><ion-icon name="code-slash-outline"></ion-icon></i>
+      <h4 class="card-title mt-3">Website Development</h4>
+      <p class="card-text mt-3">I have  worked on some projects on web development which includes both client side and server side scripting languages.</p>
+    </div>
+  </div>
+  </div>
+  <div class="container pd-4 mb-3">
+    <div class="card servicesText">
+      <div class="card-body">
+        <!-- <i class='far servicesIcon fa-check-circle'></i> -->
+        <i class="fas servicesIcon "><ion-icon name="logo-apple-ar"></ion-icon></i>
+        <h4 class="card-title mt-3">Mobile app development</h4>
+        <p class="card-text mt-3">I have developed some fully functionable mobile apps using react-native
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="container pd-4 mb-3">
+    <div class="card servicesText">
+      <div class="card-body">
+        <i class='fas servicesIcon fa-layer-group'></i>
+        <h4 class="card-title mt-3">Machine learning</h4>
+        <p class="card-text mt-3"> I have done some mini projects in which I have desined some ensemble models to boost accuracy of some notable algorithms.</p>
+      </div>
+    </div>
+  </div>
+  <div class="container pd-4 mb-3">
+    <div class="card servicesText">
+      <div class="card-body">
+        <i><ion-icon class='fas servicesIcon fa-layer' name="analytics-outline"></ion-icon></i>
+        <h4 class="card-title mt-3">Data Analysis</h4>
+        <p class="card-text mt-3"> I have done some courses on data mining and data analysis with visualization techniques using python. </p>
+      </div>
+    </div>
+  </div>
+  
+</div>
+</div>
+</div>
+</section>
+
+<!-- languages known -->
+<section id="languages">
+  <center><hr width="80%" style=" opacity:1;color: greenyellow; margin-top:40px ; height:2px; border-radius:2px" ></center>
+  <div class="container">
+  <div class="row">
+    <h1 class="text-center" id="l">Languages known</h1>
+<div class="container">
+    
+  <div id="myCarousel" class="carousel slide" data-interval=1500 data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+      <div class="item active" style="font-size: 40px;">
+        <div class="carousel-caption"><h4 class="cap">Programming</h4></div>
+        <div class="lang" style="">
+            <span ><i class="fab fa-python"></i></span>
+              <span ><i class="fab fa-java"></i></span>
+              <span ><i class="fab fa-solid fa-c"></i></span>
+              <span><i class="fab fa-solid fa-c">++</i></span>
+        </div> </div>
+
+
+        <div class="item" style="font-size: 40px;">
+            <div class="carousel-caption"><h4 class="cap">Web development</h4></div>
+            <div class="lang" style="">
+                <span><i class="fab fa-html5"></i></span>
+              <span><i class="fab fa-css3-alt"></i></span>
+              <span><i class="fab fa-bootstrap"></i></span>
+              <span><i class="fab fa-js"></i></span>           <span class="col-2"><i class="fab fa-angular"></i></span>
+              <span><i class="fab fa-php"></i></span>
+            </div> </div>
+
+            <div class="item" style="font-size: 40px;">
+                <div class="carousel-caption"><h4 class="cap">App development</h4></div>
+                <div class="lang" style="">
+                    <span><i class="fab fa-react"></i></span>
+                </div> </div>
+      
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+    
+  </div>
+  </div>
+</section>
+
+  <!-- languages known-->
+
+  <!-- projects -->
+<section id="projects">
+    <div class="container mt-4 d-none d-lg-block">
+      <h1 class="text-center col-lg-12 mt-4">Mini-Projects</h1>
+      <div class="row mt-5">
+        <div class="col-4">
+          <div class="container">
+          <div class="proj">
+        
+            <div class="circle" style="--clr:#c4c4c4">
+                <img src="burger-solid.svg" class="img_logo logo" alt="">
+               </div>
+        <div class="content">
+            <h3>Food delivery app</h3>
+            <p>This is a well stuctured app for a single restaurant developed with react native</p>
+            <a href="#">explore</a>
+        </div>
+        <img src="fooddelF.png" class="product_img" >
+    </div>
+        </div></div>
+        <div class="col-4">
+          <div class="container">
+            <div class="proj">
+              <div class="circle" style="--clr:#c4c4c4">
+                 <img src="address-card-solid.svg" class="img_logo logo" width="90%" class="logo" alt="">
+                 </div>
+          <div class="content">
+              <h3>Contact app</h3>
+              <p>This is a contact directory app with added feature to pin the contact card on map</p>
+              <a href="#">explore</a>
+          </div>
+          <img class="product_img" alt="">
+          </div>
+          </div>
+          
+        </div>
+        <div class="col-4 pd-2">
+          <div class="container">
+            <div class="proj">
+              <div class="circle" style="--clr:#c4c4c4">
+                  <img src="XO.png" class="img_logo logo" alt="">
+                 </div>
+          <div class="content">
+              <h3>Tic-Tac-Toe</h3>
+              <p>This is a simple two-player game developed using react native</p>
+              <a href="#">explore</a>
+          </div>
+          <img src="img_xo.png" class="product_img">
+          </div>
+          </div>
+          
+        </div>
+     
+
+  
+    </div></div>
+  
+  
+ 
+  <section id="contact">
+  <center><hr width="80%" style=" opacity:1;color: greenyellow; margin-top:40px ; height:2px; border-radius:2px" ></center>
+  <!-- contact section-->
+
+    <div class="container mt-3 contactContent">
+
+      <h1 class="text-center">Contact Me</h1>
+
+      <div class="row mt-4">
+        <div class="col-lg-6 mt-4">
+          <div style="max-width:100%;overflow:hidden;color:red;width:500px;height:450px;">
+            <div id="embedmap-canvas" style="height:100%; width:100%;max-width:100%;">
+              <iframe style="height:100%;width:100%;border:0;" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=chennai&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8">
+              </iframe>
+            </div>
+            <a class="googlemaps-html" href="https://www.embed-map.com" id="get-data-forembedmap">https://www.embed-map.com</a>
+            <style>
+              #embedmap-canvas img {
+                max-width: none !important;
+                background: none !important;
+                font-size: inherit;
+                font-weight: inherit;
+              }
+            </style>
+          </div>
+        </div>
+
+        <div class="col-lg-6 mt-4">
+          <!-- form fields -->
+          <form>
+            <input type="text" class="form-control form-control-lg" placeholder="Name">
+            <input type="email" class="form-control mt-3" placeholder="Email">
+            <input type="text" class="form-control mt-3" placeholder="Subject">
+            <div class="mb-3 mt-3">
+              <textarea class="form-control" rows="5" id="comment" name="text" placeholder="Project Details"></textarea>
+            </div>
+          </form>
+          <a class="btn btn-outline-success mt-3">Contact Me</a>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+</section>
+  <!-- footer section-->
+  <footer class="text-center text-white" style="background-color: #f1f1f1;">
+    <!-- Grid container -->
+    <div class="container pt-4">
+      <!-- Section: Social media -->
+      <div class="mb-4">
+        <!-- Facebook -->
+        <a
+          class="btn btn-link btn-floating btn-lg text-dark m-1"
+          href="#!" 
+          role="button"
+          data-mdb-ripple-color="dark"
+          ><i class="fab fa-facebook-f"></i
+        ></a>
+  
+        <!-- Twitter -->
+        <a
+          class="btn btn-link btn-floating btn-lg text-dark m-1"
+          href="#!"
+          role="button"
+          data-mdb-ripple-color="dark"
+          ><i class="fab fa-twitter"></i
+        ></a>
+  
+        <!-- Google -->
+        <a
+          class="btn btn-link btn-floating btn-lg text-dark m-1"
+          href="#!"
+          role="button"
+          data-mdb-ripple-color="dark"
+          ><i class="fab fa-google"></i
+        ></a>
+  
+        <!-- Instagram -->
+        <a
+          class="btn btn-link btn-floating btn-lg text-dark m-1"
+          href="#!"
+          role="button"
+          data-mdb-ripple-color="dark"
+          ><i class="fab fa-instagram"></i
+        ></a>
+  
+        <!-- Linkedin -->
+        <a
+          class="btn btn-link btn-floating btn-lg text-dark m-1"
+          href="#!"
+          role="button"
+          data-mdb-ripple-color="dark"
+          ><i class="fab fa-linkedin"></i
+        ></a>
+        <!-- Github -->
+        <a
+          class="btn btn-link btn-floating btn-lg text-dark m-1"
+          href="#!"
+          role="button"
+          data-mdb-ripple-color="dark"
+          ><i class="fab fa-github"></i
+        ></a>
+          </div>
+      <!-- Section: Social media -->
+    </div>
+    <!-- Grid container -->
+  
+    <!-- Copyright -->
+    <div class="text-center text-dark p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      © 2020 Copyright: ABILASH D & KARTHIC KUMARAN S
+    </div>
+    <!-- Copyright -->
+  </footer>
+
+
+  <!-- load javascript after loading all html content -->
+  <script src="script/script.js"></script>
+<script>
+// Get all sections that have an ID defined
+const sections = document.getElementsByTagName("section");
+// Add an event listener listening for scroll
+window.addEventListener("scroll", navHighlighter);
+
+function navHighlighter() {
+  
+  // Get current scroll position
+  let scrollY = window.pageYOffset;
+ 
+  // Now we loop through sections to get height, top and ID values for each
+  for(var j=0;j<sections.length;j++)
+  {
+    const sectionHeight = sections[j].offsetHeight;
+    const sectionTop = sections[j].offsetTop-80;
+    sectionId = sections[j].getAttribute("id");
+    if (
+      scrollY > sectionTop &&
+      scrollY <= sectionTop + sectionHeight
+    ){
+      //alert("true" + sectionId);
+      document.querySelector(".navigation a[href*="+sectionId+"]").parentNode.classList.add("active");
+      //document.querySelector(".navigation li a[href*=" + sectionId + "]").parentElement.className("list");
+      //document.getElementById(sectionId).parentNode.className("list active");
+    } else {
+      //alert("false" + sectionId);
+      document.querySelector(".navigation a[href*="+sectionId+"]").parentNode.classList.remove("active");
+      //document.getElementById(sectionId).parentNode.className("list active");
+      //document.querySelector(".navigation li a[href=" + sectionId + "]").parentElement.className("list");
+    }
+  }
+}
+</script>
+</body>
+
+</html>
